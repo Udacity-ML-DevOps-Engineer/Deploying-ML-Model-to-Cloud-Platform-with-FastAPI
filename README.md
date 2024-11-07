@@ -121,3 +121,8 @@ test_main.py ...                                                                
 ========================================== 3 passed, 2 warnings in 7.19s ===========================================
 ```
 
+```python .\inference.py
+Status Code: 200
+Prediction: {'prediction': '<=50K'}
+```
+
