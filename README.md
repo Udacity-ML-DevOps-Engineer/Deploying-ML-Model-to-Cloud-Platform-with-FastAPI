@@ -8,7 +8,7 @@ This project develops a classification model on publicly available Census Bureau
 
 1. GitHub Actions
 
-  [GitHub CI](images/continuous_integration.png)
+  ![GitHub CI](images/continuous_integration.png)
 
 2. Data
 
