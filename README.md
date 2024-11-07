@@ -97,3 +97,27 @@ Your test cases look good!
 This is a heuristic based sanity testing and cannot guarantee the correctness of your code.
 You should still check your work against the rubric to ensure you meet the criteria.
 ```
+
+``` pytest .\test_main.py
+=============================================== test session starts ================================================
+platform win32 -- Python 3.8.20, pytest-8.3.3, pluggy-1.5.0
+rootdir: C:\Users\samue\Downloads\Udacity\ML DevOps\Deploying-ML-Model-to-Cloud-Platform-with-FastAPI
+plugins: anyio-4.5.0, hydra-core-1.3.2, typeguard-2.13.3
+collected 3 items
+
+test_main.py ...                                                                                              [100%] 
+
+================================================= warnings summary ================================================= 
+..\..\..\..\..\miniconda3\envs\deploy-ml-model\lib\site-packages\pydantic\_internal\_config.py:291
+  C:\Users\samue\miniconda3\envs\deploy-ml-model\lib\site-packages\pydantic\_internal\_config.py:291: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+..\..\..\..\..\miniconda3\envs\deploy-ml-model\lib\site-packages\pydantic\_internal\_config.py:341
+  C:\Users\samue\miniconda3\envs\deploy-ml-model\lib\site-packages\pydantic\_internal\_config.py:341: UserWarning: Valid config keys have changed in V2:
+  * 'schema_extra' has been renamed to 'json_schema_extra'
+    warnings.warn(message, UserWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================== 3 passed, 2 warnings in 7.19s ===========================================
+```
+

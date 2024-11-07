@@ -66,7 +66,7 @@ def compute_slice_metrics(
     cat_features: list
 ) -> pd.DataFrame:
     """
-    Computes performance metrics on slices of data for a given feature
+    Computes performance metrics on slices of data for a given feature and returns a dataframe
     
     Args:
         data: pandas dataframe
@@ -75,9 +75,8 @@ def compute_slice_metrics(
         encoder: trained encoder
         lb: trained label binarizer
         cat_features: list of categorical features
-    
     Returns:
-        pd.DataFrame: DataFrame containing the performance metrics for each slice
+        pd.DataFrame: DataFrame containing the metrics for each slice
     """
     slice_metrics = []
     
@@ -118,9 +117,8 @@ def compute_slice_metrics(
             "number_of_samples": len(slice_data)
         })
     
-    # Convert to DataFrame
+    # Convert metrics to DataFrame
     metrics_df = pd.DataFrame(slice_metrics)
-    
     return metrics_df
 
 

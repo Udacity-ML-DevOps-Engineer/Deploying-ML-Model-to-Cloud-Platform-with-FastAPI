@@ -71,10 +71,10 @@ def train_and_evaluate_model(data_path):
             cat_features=cat_features
         )
         print(f"Metrics for feature: {feature}")
-        print(metrics_df)
+        metrics_df.to_csv(f"./metrics/slice_output_{feature}.txt", index=False)
 
 
 if __name__ == "__main__":
-    data_path = "../data/census_cleaned.csv"
+    data_path = "./data/census_cleaned.csv"
     train_and_evaluate_model(data_path)
 
